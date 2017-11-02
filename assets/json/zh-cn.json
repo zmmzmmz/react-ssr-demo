@@ -1,0 +1,109 @@
+{
+  "common": {
+    "button": {
+      "ok":               "确认",
+      "cancel":           "取消",
+      "done":             "完成",
+      "preview":          "预览",
+      "save":             "保存",
+      "exit":             "退出",
+      "back":             "返回",
+      "add_text":         "添加文字",
+      "action":           "操作",
+      "login":            "登录 | 登录",
+      "logout":           "登出",
+      "edit":             "编辑",
+      "delete":           "删除",
+      "share":            "分享 | 分享到朋友圈 | 分享至 Twitter | 分享至 Instagram",
+      "like":             "点赞",
+      "comment":          "评论",
+      "favor":            "收藏",
+      "favor_cancel":     "取消收藏",
+      "print":            "打印 | 前往打印 | 购买纸质书 | 查看纸质书",
+      "copy":             "复制 | 复制链接",
+      "start":            "新建 | 开始写书",
+      "upload":           "上传图片",
+      "change":           "更换",
+      "update":           "更新",
+      "choose":           "选择",
+      "invite":           "邀请",
+      "read":             "阅读",
+      "purchase":         "购买",
+      "discovery":        "广场",
+      "my":               "我的",
+      "do_it_now":        "马上制作 | 开始记录"
+    },
+    "date": {
+    }
+  },
+  "image": {
+    "home": {
+      "first": {
+        "mobile": [
+          "http://ilife.xinshu.me/media/upload/FrLQ0rh07umAm5-QP-Csr8zZz97C",
+          "http://ilife.xinshu.me/media/upload/Fh3LsDpp0we5wu5Lwo025p5a4gPI",
+          "http://ilife.xinshu.me/media/upload/Fiy2RdNuejzTdyv3VJsYNgykUprs"
+        ],
+        "desktop": [
+          "http://ilife.xinshu.me/media/upload/FuY1WcbWcnYXh3ONlum1G6Ths7Ir",
+          "http://ilife.xinshu.me/media/upload/FsSJK7g0lafttf7yWELjvA86Cu5P",
+          "http://ilife.xinshu.me/media/upload/FlvhV4qMLsCJ1gHCurBQzNDGCDt2"
+        ]
+      },
+      "second": {
+        "mobile": [
+          "http://ilife.xinshu.me/media/upload/FmYAKc-2YU2N9qr1H0h8fQTVyQIy",
+          "http://ilife.xinshu.me/media/upload/FhENsqG_bPtsw6hFSq3xGlwfaSZY",
+          "http://ilife.xinshu.me/media/upload/Fiy2RdNuejzTdyv3VJsYNgykUprs"
+        ],
+        "desktop": [
+          "http://ilife.xinshu.me/media/upload/FuY1WcbWcnYXh3ONlum1G6Ths7Ir",
+          "http://ilife.xinshu.me/media/upload/FsSJK7g0lafttf7yWELjvA86Cu5P",
+          "http://ilife.xinshu.me/media/upload/FlvhV4qMLsCJ1gHCurBQzNDGCDt2"
+        ]
+      }
+    }
+  },
+  "message": {
+    "image_empty":        "请上传图片",
+    "article_deleting":   "删除文章？",
+    "article_deleted":    "已删除",
+    "article_delete_failed": "删除失败，请检查网络",
+    "article_fetch_error":"文章加载失败",
+    "article_not_exist":  "访问文章不存在",
+    "article_not_publish":"文章还没有发布，\n发布之后就能预览、打印",
+    "article_preview_error":"获取预览数据失败，请刷新重试",
+    "book_fetch_error":   "书籍加载失败",
+    "share_error":        "分享失败，请检查网络",
+    "share_link_error":   "获取链接失效",
+    "share_success":      "分享成功",
+    "user_not_exist":     "用户不存在 | 用户不存在，请重新登录",
+    "user_not_auth":      "未登录，点击登录",
+    "user_fetch_error":   "用户信息获取失败",
+    "user_not_login":     "未登录或者授权失败，请先登录",
+    "user_login_success": "登录成功",
+    "user_social_login":  "使用第三方账号登录",
+    "content_not_exist":  "访问内容不存在",
+    "content_data_uploading":"当前正在提交数据，请稍等...",
+    "content_exiting":    "退出编辑",
+    "content_draft":      "是否保存草稿",
+    "content_draft_save": "保存草稿",
+    "content_draft_delete": "删除草稿",
+    "content_draft_delete_error": "删除失败",
+    "content_draft_undo": "撤销编辑",
+    "content_draft_undo_title": "确认撤销编辑",
+    "content_draft_save_error": "保存失败",
+    "content_draft_save_done":  "保存成功",
+    "content_item_deleting":  "删除该段",
+    "content_item_last":   "至少保留一段文字/图片",
+    "content_image_upload_failed": "图片上传失败，请删除重试",
+    "content_image_uploading":  "当前有图片在上传，请稍等..." ,
+    "content_data_saving":      "数据同步中...",
+    "content_data_saved":       "提交成功",
+    "content_data_save_failed": "提交失败，请稍后重试",
+    "page_not_exist":           "访问页面不存在",
+    "source_not_exist":         "访问资源不存在",
+    "server_error":             "服务器故障，\n工程师正在修复",
+    "language_not_exist":       "语言不存在"
+  }
+}
