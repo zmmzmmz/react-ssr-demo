@@ -1,7 +1,4 @@
 {
-  "presets": ["react", "stage-2", "es2015"],
-  "plugins": [
-    "transform-runtime",
-    ["transform-class-properties", { "loose": true }]
-  ]
+  "presets": ["es2017", "react"],
+  "plugins": ["transform-async-to-generator", "transform-es2015-modules-commonjs"]
 }
