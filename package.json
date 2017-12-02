@@ -6,6 +6,7 @@
     "start": "nodemon bin/www",
     "dev": "node ./dist/server.js",
     "prd": "pm2 start bin/www",
+    "build": "webpack --config webpack.config.client.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "style:watch": "gulp sass:watch"
   },
@@ -40,8 +41,7 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "redis": "^2.8.0",
-    "sharp": "^0.18.4",
-    "webpack-node-externals": "^1.6.0"
+    "sharp": "^0.18.4"
   },
   "devDependencies": {
     "babel-loader": "^7.1.2",
@@ -60,6 +60,7 @@
     "postcss-loader": "^2.0.9",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.6.0"
   }
 }

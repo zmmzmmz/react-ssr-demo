@@ -1,8 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
 const srcPath = path.resolve(__dirname, 'src');
-const distPath = path.resolve(__dirname, 'public/javascripts');
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
+const distPath = path.resolve(__dirname, 'public');
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const nodeExternals = require('webpack-node-externals')
+
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -11,12 +13,15 @@ function resolve (dir) {
 module.exports = {
   context: srcPath,
   target: 'web',
-
   entry: path.resolve(__dirname, './src/client.js'),
   output: {
     path: distPath,
-    filename: 'client.js',
+    filename: 'js/client.js',
     publicPath: '/'
+  },
+  devtool: 'source-map',
+  resolve: {
+    extensions: ['.js', '.vue', '.json', '.scss']
   },
   module: {
     rules: [
@@ -26,10 +31,10 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader']
+        })
       },
       {
         test: /\.scss$/,
@@ -47,15 +52,15 @@ module.exports = {
       },
     ]
   },
-  devtool: 'source-map',
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('development')
       }
     }),
-    new ExtractTextPlugin(
-      path.posix.join('public', 'css/styles.css')
-    )
+    new ExtractTextPlugin({
+      filename: 'styles/main-[hash].css',
+      allChunks: true
+    })
   ]
 };

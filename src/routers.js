@@ -1,8 +1,9 @@
 import React from 'react'
+import Abs from './components/a'
 const routers = [
   {
     path: '/a',
-    component: () => <div>a - hah - a</div>
+    component: () => <Abs/>
   },
   {
     path: '/b',

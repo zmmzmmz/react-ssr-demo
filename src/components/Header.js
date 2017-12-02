@@ -1,10 +1,15 @@
-import React from 'react'
+import React, {Component} from 'react'
 // require('../styles/Header.css')
 
-const Topbar = () => (
-  <header className="topbar">
-    top
-  </header>
-)
+class Topbar extends Component {
+  render () {
+    return (
+      <header className="topbar">
+        top123
+      </header>
+    )
+
+  }
+}
 
 export default Topbar

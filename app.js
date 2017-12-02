@@ -21,13 +21,6 @@ app.use(bodyparser({
 app.use(json())
 app.use(logger())
 app.use(require('koa-static')(__dirname + '/public'))
-// render(app, {
-//   root: path.join(__dirname, 'views'),
-//   layout: 'layout',
-//   viewExt: 'ejs',
-//   cache: false,
-//   debug: false
-// })
 
 // logger
 app.use(async (ctx, next) => {

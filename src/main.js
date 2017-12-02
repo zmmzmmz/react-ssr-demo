@@ -22,12 +22,6 @@ const App = () => (
           <li><Link to="/b">b</Link></li>
           <li><Link to="/c">c</Link></li>
         </ul>
-
-        {
-          routers.map((router, index) => (
-            <Route key={index} path={router.path} exact={router.exact} component={router.component}/>
-          ))
-        }
       </div>
 
       <div style={{ flex: 1, padding: '10px' }}>

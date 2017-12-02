@@ -17,6 +17,6 @@ export default (renderMe) => `<!DOCTYPE html>
     </head>
     <body>
         <div id="app">${renderToString(renderMe)}</div>
-        <script src="/javascripts/client.js"></script>
+        <script src="/js/client.js"></script>
     </body>
 </html>`;
